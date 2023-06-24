@@ -32,6 +32,7 @@ def predict_image(image_path):
     # Load the image
     img = load_img(image_path,  target_size=(28, 28), color_mode='grayscale')
     image = img_to_array(img)
+    image = image/255
     
 
     # Predict the label
